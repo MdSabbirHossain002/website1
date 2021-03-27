@@ -1,0 +1,191 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: montserrat;
+}
+header{
+	height:auto;
+	width:100%;
+}
+nav{
+	background: #0082e6;
+	height: 80px;
+	width: 100%;
+}
+
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 8%;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block  ;      /*inline-below,block  */
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 7px 13px;
+	border-radius: 3px;
+}
+a.active,a:hover{
+	background: red;
+	transition:1s;
+}
+nav .check-box{
+	display:none;
+	line-height:80px;
+	width:15px;
+	height:15px;
+	background:red;
+	float:right;
+	top:40%;
+	position:relative;
+
+}
+@media (max-width:900px){
+nav{}
+	nav .check-box{
+		display:block;
+		line-height:80px;
+		width:25px;
+		height:25px;
+		background:red;
+		float:right;
+		top:35%;
+		position:relative;
+		right:35px;
+		border-radius:2px;
+		display:flex;
+		flex-direction:column;
+		padding:5px;
+		justify-content:space-around;
+		transition:1s;
+	}
+	nav .check-box .check-bar{
+		width:100%;
+		height:3px;
+		background:white;
+		transition: .6s;
+	}
+	nav ul{
+		height:0;
+		display: none;
+	}
+	.check1{
+		width:100%;
+		height:3px;
+		background:white;
+		border-radius: 2px;
+		transform: rotateZ(45deg) translateX(1px) translateY(3px) scaleX(1.3);
+		transition: .6s;
+	}
+	.check2{
+		display:none;
+	}
+	.check3{
+		width:100%;
+		height:3px;
+		background:white;
+		border-radius: 2px;
+		transform: rotateZ(-45deg) translateX(3px) translateY(-5px) scaleX(1.3);
+		transition: 1s;
+	}
+
+
+	.ul{
+		height:auto;
+		width:100%;
+		background:#3377aa;
+		margin:;
+		display:flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		transform: scaleX(1.05);
+
+	}
+	.li{
+		line-height:40px;
+	}
+}
+/* ==========end the header part============*/
+/* ++++++++++++++++START OF INTRO PART++++++++++++++++++ */
+.intro-page{
+	height: 450px;
+	width: 100%;
+	background-image: url("IMG-20210319-WA0001.jpg");
+	background-position: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.intro-page .frees{
+	font-size: 60px;
+	font-family: 'popins';
+	color:white;
+}
+.intro-page .ei{
+	font-size: 40px;
+	font-family: sans-serif;
+	color:white;
+	margin-top:20px;
+}
+/* ;;;;;;;;;;;ei animation start;;;;;;;;;; */
+@keyframes wdanim {
+	0%{
+		height:100%;
+	}
+	100%{
+		height:0;
+	}
+
+}
+/* ;;;;;;;;;;;ei animation end;;;;;;;;;; */
+.intro-page .ei .wd{
+	background: rgba(255, 255, 255, 0.5);
+	padding:3px;
+	margin:0 5px;
+	color:black;
+	animation: wdanim 2s linear 5 alternate	;
+}
+.intro-page .ei .msw{
+	background: rgba(255, 255, 255, 0.5);
+	padding:3px;
+	margin:0 5px;
+	color:black;
+	display:none;
+}
+.intro-page a{
+	margin-top:70px;
+	font-size:30px;
+	color:black;
+	font-weight: bold;
+	font-family: fantasy;
+	padding:5px 8px;
+	letter-spacing: 2px;
+	background: gray;
+}
+.intro-page a:hover{
+	color:gray;
+	background-color: black;
+	border: 2px gray solid;
+}
+
+/* ==============END OF INTRO PAGE============= */
